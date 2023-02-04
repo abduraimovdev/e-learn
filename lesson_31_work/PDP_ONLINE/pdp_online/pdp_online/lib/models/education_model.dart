@@ -41,7 +41,8 @@ class Teacher extends Person {
   });
 }
 
-class Student extends Person {
+class
+Student extends Person {
   String payment;
 
   Student({
