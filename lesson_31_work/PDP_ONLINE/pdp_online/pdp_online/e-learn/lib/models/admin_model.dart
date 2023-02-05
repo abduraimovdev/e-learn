@@ -1,14 +1,15 @@
 import 'course_model.dart';
-import 'user_model.dart';
-import 'teacher_model.dart';
-import 'student_model.dart';
 import 'group_model.dart';
+import 'student_model.dart';
+import 'teacher_model.dart';
+import 'user_model.dart';
 
 class AdminModel extends UserModel {
   List<CourseModel> courses;
   List<TeacherModel> teachers;
   List<StudentModel> students;
   List<GroupModel> groups;
+
   AdminModel({
     required super.uId,
     required super.firstName,
@@ -19,6 +20,7 @@ class AdminModel extends UserModel {
     required super.gender,
     required super.phone,
     required super.password,
+    required super.role,
     required this.courses,
     required this.teachers,
     required this.students,

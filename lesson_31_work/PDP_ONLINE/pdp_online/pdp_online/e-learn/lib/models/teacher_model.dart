@@ -1,5 +1,5 @@
-import 'user_model.dart';
 import 'group_model.dart';
+import 'user_model.dart';
 
 class TeacherModel extends UserModel {
   List<GroupModel> groups;
@@ -15,6 +15,7 @@ class TeacherModel extends UserModel {
     required super.gender,
     required super.phone,
     required super.password,
+    required super.role,
     required this.groups,
     required this.salary,
     required this.experience,

@@ -1,6 +1,6 @@
-import 'user_model.dart';
 import 'group_model.dart';
 import 'payment_model.dart';
+import 'user_model.dart';
 
 class StudentModel extends UserModel {
   List<GroupModel> groups;
@@ -16,6 +16,7 @@ class StudentModel extends UserModel {
     required super.gender,
     required super.phone,
     required super.password,
+    required super.role,
     required this.groups,
     required this.balance,
     required this.payments,

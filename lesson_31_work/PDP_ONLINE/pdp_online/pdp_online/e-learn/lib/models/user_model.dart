@@ -10,6 +10,7 @@ class UserModel implements Comparable<UserModel> {
   Gender gender;
   String phone;
   String password;
+  String role;
 
   UserModel({
     required this.uId,
@@ -21,6 +22,7 @@ class UserModel implements Comparable<UserModel> {
     required this.gender,
     required this.phone,
     required this.password,
+    required this.role,
   });
 
   @override
